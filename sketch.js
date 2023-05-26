@@ -1,4 +1,6 @@
-//let font;
+//Title: 230418a
+//Author: takawo
+//Availability: "https://openprocessing.org/sketch/1899893/embed/"
 let radicals = [
   "⺀", "⺁", "⺂", "⺃", "⺄", // 偏旁部首
   "⼀", "⼁", "⼂", "⼃", "⼄", "⺅", "⺆", "⺇", "⺈", "⺉","⺊", "⺋", "⺌", "⺍", "⺎",  "⺨", "⺩", "⺪", "⺫", "⺬", "⺲", "⺳", "⺴", "⺵", "⺶",  "⺷", "⺸", "⺹", "⺺", "⺻", "⺼", "⺽", "⺾", "⺿", "⻀", "⻐", "⻑", "⻒", "⻓", "⻔", "⻤", "⻥", "⻦", "⻧", "⻨","⻟", "⻠", "⻡", "⻢", "⻣","⻮", "⻯", "⻰", "⻱", "⻲", "⺭", "⺮", "⺯", "⺰", "⺱", "⺣", "⺤", "⺥", "⺦", "⺧",
@@ -25,7 +27,7 @@ function setup() {
 	rs = int(random(1000000));
 
 	offset = -width / 15;
-	palette = random(colorScheme).colors.concat();
+	
   
 }
 
@@ -109,11 +111,6 @@ function drawRect(x, y, w, h, t, ratio) {
 	pop();
 }
 
-let colorScheme = [{
-		name: "Benedictus",
-		colors: ["#F27EA9", "#366CD9", "#5EADF2", "#636E73", "#F2E6D8"],
-	},
-];
 
 function easeInOutCirc(x) {
 	return x < 0.5 ?
